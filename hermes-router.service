@@ -1,0 +1,17 @@
+[Unit]
+Description=Hermes Router - LLM Backend Router
+After=network.target
+
+[Service]
+Type=simple
+User=USERNAME
+WorkingDirectory=/home/USERNAME/workspace/hermes_router
+EnvironmentFile=/home/USERNAME/workspace/hermes_router/.env
+ExecStart=/usr/bin/python3 /home/USERNAME/workspace/hermes_router/hermes_router.py
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
