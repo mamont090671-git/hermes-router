@@ -23,7 +23,7 @@ LOCAL_LAPTOP = os.environ["LOCAL_LAPTOP"]
 
 BASE_INTERVAL = float(os.environ.get("BASE_INTERVAL", "5.0"))
 MAX_INTERVAL = float(os.environ.get("MAX_INTERVAL", "60.0"))
-CONNECT_TIMEOUT = float(os.environ.get("CONNECT_TIMEOUT", "0.6"))
+CONNECT_TIMEOUT = float(os.environ.get("CONNECT_TIMEOUT", "0.3"))
 READ_TIMEOUT = float(os.environ.get("READ_TIMEOUT", "300"))
 MAX_REQUEST_SIZE = int(os.environ.get("MAX_REQUEST_SIZE", "10485760")) # 10MB лимит (Пункт 7)
 

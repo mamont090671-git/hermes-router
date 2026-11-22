@@ -153,10 +153,10 @@ sudo journalctl -u hermes-router -b
 hermes_router/
 ├── README.md              # Этот файл
 ├── hermes_router.py       # Основной скрипт
-├── hermes_router.env      # Шаблон env-переменных
+├── requirements.txt       # Зависимости Python
 ├── hermes-router.service  # systemd unit file
 ├── .env.example           # Шаблон .env
-└── LICENSE
+└── .gitignore
 ```
 
 ## История версий
